@@ -1,6 +1,5 @@
 import csv
 
-
 def get_distance_lists(file_name):
     d1 = []
     d2 = []
@@ -39,10 +38,10 @@ def get_similarity_score(file_name):
     return sim
 
 if __name__ == "__main__":
-    file_name = "locationIds.csv"
-    
+    file_name = "locationIds.txt"
+
     distance = get_distances(file_name)
-    print(distance)
+    print(f"distance: {distance}")
 
     similarity = get_similarity_score(file_name)
-    print(similarity)
+    print(f"similarity: {similarity}")
